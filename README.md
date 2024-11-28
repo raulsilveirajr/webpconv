@@ -22,3 +22,8 @@ poetry add black --group dev
 
 ## Poetry Add Isort (Import Sorter) in Dev Group (add VSCode Isort Extension too)
 poetry add isort --group dev
+
+## Find all webp files in /dados and convert them to jpg
+Usage:
+```bash
+find /dados -type f -name "*.webp" -exec python3 webpconv.py {} \;
